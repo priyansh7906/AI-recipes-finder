@@ -1,0 +1,168 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f0f2ff, #e4f1ff);
+  padding: 30px;
+  color: #333;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+
+/* 🎯 Elegant Centered Search Bar */
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+input[type="text"] {
+  padding: 18px 20px;
+  width: 60%;
+  max-width: 500px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+/* 🎨 Vibrant Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #fff;
+}
+
+#micBtn {
+  background: #2196f3;
+}
+
+#searchBtn {
+  background: #4caf50;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 📦 Recipe Cards Grid */
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding-top: 10px;
+}
+
+/* 📸 Recipe Card with Glow */
+.recipe-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  text-align: left;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.1);
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.recipe-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.recipe-card p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Chart */
+canvas {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 600px) {
+  input[type="text"] {
+    width: 90%;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  button {
+    border-radius: 12px;
+    width: 60px;
+  }
+}
+/* Animated colorful background */
+body {
+    background: linear-gradient(270deg, #ffe6e6, #e0f7fa, #f0f2ff, #e4f1ff, #ffe6e6);
+    background-size: 200% 200%;
+    animation: gradientMove 8s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
